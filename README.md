@@ -4,7 +4,7 @@ Get a board's name and type given its short name (eg. `/b/`).
 
 ## Installation
 
-```
+```bash
 yarn add 4chan-boards
 
 # OR
@@ -50,7 +50,7 @@ Objects mapping short names to full names. `boards.all` contains the mapping for
 * **boards.SFW**
 * **boards.INVALID**
 
-`boards.INVALID` is `0`, so you can check if a board shortname is valid by doing:
+`boards.INVALID` is `0`, so you can check if a board short name is valid by doing:
 
 ```js
 const boards = require('4chan-boards')
