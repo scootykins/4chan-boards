@@ -27,28 +27,28 @@ console.log(boards.getType('b') === boards.NSFW)  // true
 
 Get information (ie name or type) about a board.
 
-##### boards.getName(board)
-##### boards.getType(board)
+* **boards.getName(board)**
+* **boards.getType(board)**
 
 
 ### Objects
 
 Objects mapping short names to full names. `boards.all` contains the mapping for all the boards, `boards.sfw` contains mapping for only the SFW boards, etc.
 
-##### boards.all
-##### boards.admin
-##### boards.nsfw
-##### boards.sfw
+* **boards.all**
+* **boards.admin**
+* **boards.nsfw**
+* **boards.sfw**
 
 
 ### Enumerated types
 
 `boards.getType(board)` will return an enumerated type, which are really just numbers under the hood.
 
-##### boards.ADMIN
-##### boards.NSFW
-##### boards.SFW
-##### boards.INVALID
+* **boards.ADMIN**
+* **boards.NSFW**
+* **boards.SFW**
+* **boards.INVALID**
 
 `boards.INVALID` is `0`, so you can check if a board shortname is valid by doing:
 
