@@ -1,0 +1,17 @@
+{
+  "name": "4chan-boards",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Philip Scott <pscott@zeptohost.com>",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0"
+  },
+  "dependencies": {
+    "semantic-release": "^12.4.1"
+  }
+}
