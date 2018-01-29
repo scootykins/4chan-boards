@@ -1,17 +1,25 @@
 {
   "name": "4chan-boards",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "main": "index.js",
   "author": "Philip Scott <pscott@zeptohost.com>",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^5.0.0"
+    "mocha": "^5.0.0",
+    "travis-deploy-once": "^4.3.3",
+    "semantic-release": "^12.4.1"
   },
   "dependencies": {
     "semantic-release": "^12.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ScottyFillups/4chan-boards.git"
   }
 }
