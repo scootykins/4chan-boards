@@ -2,6 +2,26 @@
 
 Get a board's name and type given its short name (eg. `/b/`).
 
+### 2.0.0 BREAKING CHANGES
+
+Enumerated types are now `Symbol`s, so relying on falsy evaluation will no longer work:
+
+```js
+const boards = require('4chan-boards')
+
+if (boards.getType('b')) {
+  console.log('This will not print!')
+}
+```
+
+Instead, use the provided enumerated types:
+
+```js
+if (boards.getType('b') !== boards.INVALID) {
+  console.log('This message prints! Yay!')
+}
+```
+
 ## Installation
 
 ```bash
@@ -43,20 +63,9 @@ Objects mapping short names to full names. `boards.all` contains the mapping for
 
 ### Enumerated types
 
-`boards.getType(board)` will return an enumerated type, which are really just numbers under the hood.
+`boards.getType(board)` will return an enumerated type, which has been implemented as a `Symbol`
 
 * **boards.ADMIN**
 * **boards.NSFW**
 * **boards.SFW**
 * **boards.INVALID**
-
-`boards.INVALID` is `0`, so you can check if a board short name is valid by doing:
-
-```js
-const boards = require('4chan-boards')
-
-if (boards.getType('not-a-board')) {
-  console.log('this will not be printed')
-}
-```
-
