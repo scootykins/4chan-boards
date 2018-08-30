@@ -1,22 +1,36 @@
 {
   "name": "4chan-boards",
   "version": "0.0.0-development",
-  "main": "index.js",
+  "main": "index.json",
   "author": "Philip Scott <pscott@zeptohost.com>",
   "scripts": {
-    "test": "mocha --reporter spec",
+    "gen": "node ./scripts",
+    "lint": "eslint .",
+    "fix": "eslint . --fix",
+    "test": "yarn run lint && nyc mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
   },
   "license": "MIT",
   "devDependencies": {
+    "axios": "^0.18.0",
     "chai": "^4.1.2",
+    "coveralls": "^3.0.2",
+    "deep-equal": "^1.0.1",
+    "dirty-chai": "^2.0.1",
+    "eslint": "^5.4.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^4.0.0",
     "mocha": "^5.0.0",
-    "travis-deploy-once": "^4.3.3",
-    "semantic-release": "^12.4.1"
-  },
-  "dependencies": {
-    "semantic-release": "^12.4.1"
+    "nock": "^9.6.1",
+    "nyc": "^13.0.1",
+    "release-it": "^7.6.0",
+    "semantic-release": "^15.9.12",
+    "travis-deploy-once": "^5.0.7"
   },
   "repository": {
     "type": "git",
