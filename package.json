@@ -2,7 +2,7 @@
   "name": "4chan-boards",
   "version": "0.0.0-development",
   "main": "index.js",
-  "author": "Philip Scott <pscott@zeptohost.com>",
+  "author": "scootykins <scootykins@yahoo.com>",
   "scripts": {
     "test": "mocha --reporter spec",
     "travis-deploy-once": "travis-deploy-once",
@@ -20,6 +20,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ScottyFillups/4chan-boards.git"
+    "url": "https://github.com/scootykins/4chan-boards.git"
   }
 }
