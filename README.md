@@ -1,5 +1,7 @@
 # 4chan-boards
 
+[![Build Status](https://travis-ci.org/scootykins/4chan-boards.svg?branch=master)](https://travis-ci.org/scootykins/4chan-boards)
+
 Get a board's name and type given its short name (eg. `/b/`).
 
 ### 2.0.0 BREAKING CHANGES

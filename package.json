@@ -2,6 +2,7 @@
   "name": "4chan-boards",
   "version": "0.0.0-development",
   "main": "index.js",
+  "description": "Get a 4chan board's name and type by its shortname",
   "author": "scootykins <scootykins@yahoo.com>",
   "scripts": {
     "test": "mocha --reporter spec",
